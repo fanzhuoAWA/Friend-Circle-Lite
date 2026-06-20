@@ -69,7 +69,7 @@ function initialize_fc_lite() {
         const stats = data.statistical_data;
         statsContainer.innerHTML = `
             <div>Powered by <a href="https://github.com/willow-god/Friend-Circle-Lite" target="_blank">FriendCircleLite</a><br></div>
-            <div>共 ${stats.friends_num} 个订阅 活跃数 ${stats.active_num} 共 ${stats.article_num} 篇文章 | ${stats.last_updated_time}<br></div>
+            <div>已订阅 ${stats.friends_num} 个友链 其中 ${stats.active_num} 个近期活跃 ${stats.article_num} 篇文章 | ${stats.last_updated_time}<br></div>
         `;
 
         displayRandomArticle(); // 显示随机友链卡片
