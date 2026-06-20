@@ -68,10 +68,8 @@ function initialize_fc_lite() {
         // 处理统计数据
         const stats = data.statistical_data;
         statsContainer.innerHTML = `
-            <div>Powered by: <a href="https://github.com/willow-god/Friend-Circle-Lite" target="_blank">FriendCircleLite</a><br></div>
-            <div>Designed By: <a href="https://www.liushen.fun/" target="_blank">LiuShen</a><br></div>
-            <div>订阅:${stats.friends_num}   活跃:${stats.active_num}   总文章数:${stats.article_num}<br></div>
-            <div>更新时间:${stats.last_updated_time}</div>
+            <div>Powered by <a href="https://github.com/willow-god/Friend-Circle-Lite" target="_blank">FriendCircleLite</a><br></div>
+            <div>共 ${stats.friends_num} 个订阅 活跃数 ${stats.active_num} 共 ${stats.article_num} 篇文章 | ${stats.last_updated_time}<br></div>
         `;
 
         displayRandomArticle(); // 显示随机友链卡片
@@ -104,7 +102,7 @@ function initialize_fc_lite() {
 
             const date = document.createElement('div');
             date.className = 'card-date';
-            date.innerText = "🗓️" + article.created.substring(0, 10);
+            date.innerText = article.created.substring(0, 10);
             card.appendChild(date);
 
             const bgImg = document.createElement('img');
