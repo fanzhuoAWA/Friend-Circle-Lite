@@ -84,6 +84,6 @@ smtp:
 # 说明：用于指定特殊 RSS 地址，比如 B 站专栏等不常见 RSS 地址后缀。可以置空，但不要删除此项。
 specific_RSS:
   - name: "Amani"
-    url: "https://pfasnews.com/feed/"
+    url: "http://pfasnews.com/feed/"
   # - name: "白鱼小栈"
   #   url: "https://www.baiyuyu.com/feed"
